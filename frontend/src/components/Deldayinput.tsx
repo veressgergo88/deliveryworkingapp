@@ -78,38 +78,119 @@ function Deldayinput() {
         <div className='flex flex-col'>
             <form>
                 <label>
-                    Working day: <input value= {workingDayInput} onChange={(e) => setWorkingDayInput(e.target.value)} className="input input-bordered w-full max-w-xs" name="workDateInput" type="date" />
+                    Working day: 
+                    <input 
+                    value= {workingDayInput} 
+                    onChange={(e) => setWorkingDayInput(e.target.value)} 
+                    className="input input-bordered w-full max-w-xs" 
+                    name="workDateInput" 
+                    type="date" />
                 </label>
                 <label>
-                    Login Zone: <input value={loginZoneInput} onChange={(e) => setLoginZoneInput(e.target.value)} className="input input-bordered w-full max-w-xs" name="loginZone" type="text" placeholder='Login Zone' />
+                    Login Zone: 
+                    <input 
+                    value={loginZoneInput} 
+                    onChange={(e) => setLoginZoneInput(e.target.value)} 
+                    className="input input-bordered w-full max-w-xs" 
+                    name="loginZone" 
+                    type="text" 
+                    placeholder='Login Zone' />
                 </label>
                 <label>
-                    Start: <input value= {startHourInput} onChange={(e) => setStartHourInput(+(e.target.value))} className="input input-bordered w-full max-w-xs" name="startHour" type="number" /> : <input value= {startMinuteInput} onChange={(e) => setStartMinuteInput(+(e.target.value))} className="input input-bordered w-full max-w-xs" name="startMinute" type="number" />
-                    End: <input value= {endHourInput} onChange={(e) => setEndHourInput(+(e.target.value))} className="input input-bordered w-full max-w-xs" name="endHour" type="number" /> : <input value= {endMinuteInput} onChange={(e) => setEndMinuteInput(+(e.target.value))} className="input input-bordered w-full max-w-xs" name="endMinute" type="number" />
+                    Start: 
+                    <input value= {startHourInput}
+                    onChange={(e) => setStartHourInput(+(e.target.value))} 
+                    className="input input-bordered w-full max-w-xs" 
+                    name="startHour" 
+                    type="number" /> : 
+                    <input value= {startMinuteInput} 
+                    onChange={(e) => setStartMinuteInput(+(e.target.value))} 
+                    className="input input-bordered w-full max-w-xs" 
+                    name="startMinute" 
+                    type="number" />
+                    End: 
+                    <input value= {endHourInput} 
+                    onChange={(e) => setEndHourInput(+(e.target.value))} 
+                    className="input input-bordered w-full max-w-xs" 
+                    name="endHour" 
+                    type="number" /> : 
+                    <input value= {endMinuteInput} 
+                    onChange={(e) => setEndMinuteInput(+(e.target.value))} 
+                    className="input input-bordered w-full max-w-xs" 
+                    name="endMinute" 
+                    type="number" />
                 </label>
                 <label>
-                    Kilometer traveled: <input value= {kiloMeterInput} onChange={(e) => setKiloMeterInput(+(e.target.value))} className="input input-bordered w-full max-w-xs" name="kilometers" type="number" placeholder='Kilometers traveled' /> km
+                    Kilometer traveled: 
+                    <input value= {kiloMeterInput} 
+                    onChange={(e) => setKiloMeterInput(+(e.target.value))} 
+                    className="input input-bordered w-full max-w-xs" 
+                    name="kilometers" 
+                    type="number" 
+                    placeholder='Kilometers traveled' /> km
                 </label>
                 <label>
-                    Hours worked: <input value= {hoursWorkedInput} onChange={(e) => setHoursWorkedInput(+(e.target.value))} className="input input-bordered w-full max-w-xs" name="workedHour" type="number" placeholder='Hours worked' /> Ft
+                    Hours worked: 
+                    <input value= {hoursWorkedInput} 
+                    onChange={(e) => setHoursWorkedInput(+(e.target.value))} 
+                    className="input input-bordered w-full max-w-xs" 
+                    name="workedHour" 
+                    type="number" 
+                    placeholder='Hours worked' /> Ft
                 </label>
                 <label>
-                    Number of deliveries: <input value= {numDeliveriesInput} onChange={(e) => setNumDeliveriesInput(+(e.target.value))} className="input input-bordered w-full max-w-xs" name="numOfDeliveries" type="number" placeholder='Number of deliveries' /> piece
+                    Number of deliveries: 
+                    <input value= {numDeliveriesInput} 
+                    onChange={(e) => setNumDeliveriesInput(+(e.target.value))} 
+                    className="input input-bordered w-full max-w-xs" 
+                    name="numOfDeliveries" 
+                    type="number" 
+                    placeholder='Number of deliveries' /> piece
                 </label>
                 <label>
-                    Price of deliveries: <input value= {priceDeliveriesInput} onChange={(e) => setPriceDeliveriesInput(+(e.target.value))} className="input input-bordered w-full max-w-xs" name="priceOfDeliveries" type="number" placeholder='Price of deliveries' /> Ft
+                    Price of deliveries: 
+                    <input value= {priceDeliveriesInput} 
+                    onChange={(e) => setPriceDeliveriesInput(+(e.target.value))} 
+                    className="input input-bordered w-full max-w-xs" 
+                    name="priceOfDeliveries" 
+                    type="number" 
+                    placeholder='Price of deliveries' /> Ft
                 </label>
                 <label>
-                    Online tipping: <input value= {onTippingInput} onChange={(e) => setOnlineTippingInput(+(e.target.value))} className="input input-bordered w-full max-w-xs" name="onlineTipping" type="number" placeholder='Online tipping' /> Ft
+                    Online tipping: 
+                    <input value= {onTippingInput} 
+                    onChange={(e) => setOnlineTippingInput(+(e.target.value))} 
+                    className="input input-bordered w-full max-w-xs" 
+                    name="onlineTipping" 
+                    type="number" 
+                    placeholder='Online tipping' /> Ft
                 </label>
                 <label>
-                    Cash tipping: <input value= {cashTippingInput} onChange={(e) => setCashTippingInput(+(e.target.value))} className="input input-bordered w-full max-w-xs" name="cashTipping" type="number" placeholder='Cash tipping' /> Ft
+                    Cash tipping: 
+                    <input value= {cashTippingInput} 
+                    onChange={(e) => setCashTippingInput(+(e.target.value))} 
+                    className="input input-bordered w-full max-w-xs" 
+                    name="cashTipping" 
+                    type="number" 
+                    placeholder='Cash tipping' /> Ft
                 </label>
                 <label>
-                    Price per liter: <input value= {pricePerLiterInput} onChange={(e) => setPricePerLiterInput(+(e.target.value))} className="input input-bordered w-full max-w-xs" name="pricePerLiter" type="number" placeholder='liter/Ft' /> l/Ft
+                    Price per liter: 
+                    <input value= {pricePerLiterInput} 
+                    onChange={(e) => setPricePerLiterInput(+(e.target.value))} 
+                    className="input input-bordered w-full max-w-xs" 
+                    name="pricePerLiter" 
+                    type="number" 
+                    placeholder='liter/Ft' /> l/Ft
                 </label>
                 <label>
-                    Average fuel consumption: <input value= {averageFuelInput} onChange={(e) => setAverageFuelInput(+(e.target.value))} className="input input-bordered w-full max-w-xs" name="averageFuel" type="number" placeholder='liter/100 km' /> l/Ft
+                    Average fuel consumption: 
+                    <input value= {averageFuelInput} 
+                    onChange={(e) => setAverageFuelInput(+(e.target.value))} 
+                    className="input input-bordered w-full max-w-xs" 
+                    name="averageFuel" 
+                    type="number" 
+                    placeholder='liter/100 km' /> l/Ft
                 </label>
             </form>    
             <div>
